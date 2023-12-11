@@ -4,9 +4,8 @@ pipeline{
     stage("Making Prediction on images"){
       steps{
       	sh '''
-      		python generate_Payload.py
+      		python3 generate_Payload.py
       	'''  
-        }
       }
     }
   }
