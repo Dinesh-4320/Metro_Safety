@@ -15,7 +15,7 @@ for filename in os.listdir(image_directory):
     if filename.endswith((".jpg", ".jpeg", ".png")):
         # Add path of each image to the list 
         image_path = os.path.join(image_directory, filename)
-        image_payloads.append(payload)
+        image_payloads.append(image_path)
 
 files=[]
 i=1
